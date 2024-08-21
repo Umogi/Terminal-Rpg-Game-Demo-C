@@ -1,1 +1,0 @@
-gcc Game.c Enemies.c Items.c Maps.c Scrolls.c Talisman.c Weapons.c Battle.c Quests.c Drops.c Public.c -o Game
