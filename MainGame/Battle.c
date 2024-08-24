@@ -450,7 +450,7 @@ int BattleScreen(int MonsterId){
 
         }
 
-        if(flag == 0) Command = getch();
+        if(flag == 0) Command = _getch();
         
         if(flagOpen == 0){
             if(Command=='w' && OptionPointer > 0 ) {
