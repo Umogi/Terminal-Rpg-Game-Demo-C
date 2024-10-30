@@ -5,7 +5,7 @@ This project is a small RPG game written in C that runs in the terminal. Players
 
 ## Features
 - Terminal-based RPG gameplay.
-- Movement controls (W, S, A, D).
+- Movement controls `(W, S, A, D)`.
 - Weapons.
 - Scrolls that cast abilities.
 - XP system with leveling up.
