@@ -1,7 +1,7 @@
 # RPG Game in C (Terminal-based)
 
 ## Description
-This project is a small RPG game written in C that runs in the terminal. Players use W, S, A, D keys to move around, encounter enemies, use weapons and scrolls to cast abilities, gain experience points (XP), and choose stuts upgrades to progress in the game.
+This project is a small RPG game written in C that runs in the terminal. Players use `W, S, A, D` keys to move around, encounter enemies, use weapons and scrolls to cast abilities, gain experience points (XP), and choose stuts upgrades to progress in the game.
 
 ## Features
 - Terminal-based RPG gameplay.
