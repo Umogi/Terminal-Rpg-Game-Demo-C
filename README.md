@@ -11,9 +11,9 @@ This project is a small RPG game written in C that runs in the terminal. Players
 - XP system with leveling up.
 
 ## Controls
-- W, S, A, D - Move character up, down, left, right.
-- E - To Battle with Enemies
-- W, S, E, Q Key mappings for selecting actions (W, S), use (E), escape(Q).
+- `W, S, A, D` - Move character up, down, left, right.
+- `E` - To Battle with Enemies
+- `W, S, E, Q` Key mappings for selecting actions (W, S), use (E), escape(Q).
 
 ## Compail
 ``` 
