@@ -26,6 +26,20 @@
     void Sleep(int ms){
     	usleep(ms * 1000)
     }
+
+    int _getch() {
+        struct termios oldt, newt;
+        int ch;
+        tcgetattr(STDIN_FILENO, &oldt);
+        newt = oldt;
+        newt.c_lflag &= ~(ICANON | ECHO);
+        tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+        ch = getchar();
+        tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+        return ch;
+    }
+#endif
+
 //Save File
 int saves[4] = {
     0,
