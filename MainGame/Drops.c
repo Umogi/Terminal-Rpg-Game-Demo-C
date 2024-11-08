@@ -7,9 +7,30 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h> 
-#include <windows.h>
 #include <unistd.h>
-#include <conio.h>
+
+#ifdef _WIN32
+    #include <windows.h>
+    #include <conio.h>
+#elif defined(__linux__)||define(__APPLE__)
+    #include <unistd.h>
+    #include <termios.h>
+    void Sleep(int ms){
+    	usleep(ms * 1000)
+    }
+
+    int _getch() {
+        struct termios oldt, newt;
+        int ch;
+        tcgetattr(STDIN_FILENO, &oldt);
+        newt = oldt;
+        newt.c_lflag &= ~(ICANON | ECHO);
+        tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+        ch = getchar();
+        tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+        return ch;
+    }
+#endif
 
 void initializeDrops(){
 
