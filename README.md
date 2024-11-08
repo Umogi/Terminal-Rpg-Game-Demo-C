@@ -15,7 +15,7 @@ This project is a small RPG game written in C that runs in the terminal. Players
 - `E` - To Battle with Enemies
 - `W, S, E, Q` Key mappings for selecting actions (W, S), use (E), escape(Q).
 
-## Compail
+## Compile
 ``` 
 gcc Game.c Enemies.c Items.c Maps.c Scrolls.c Talisman.c Weapons.c Battle.c Quests.c Drops.c Public.c -o Game
 ```
