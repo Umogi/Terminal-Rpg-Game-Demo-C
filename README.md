@@ -27,5 +27,8 @@ gcc Game.c Enemies.c Items.c Maps.c Scrolls.c Talisman.c Weapons.c Battle.c Ques
 - More Enemies
 - More structurs and maps
 
+## Contributing
+Feel free to fork this repository and make improvements. Open issues or pull requests if you'd like to contribute to the development of this interactive showcase.
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
